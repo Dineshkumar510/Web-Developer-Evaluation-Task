@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Task 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/task.css">
+    </head>
+    <body>
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+              <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+              <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="#">Features</a>
+                <a class="p-2 text-dark" href="#">Enterprise</a>
+                <a class="p-2 text-dark" href="#">Support</a>
+                <a class="p-2 text-dark" href="#">Pricing</a>
+              </nav>
+              <a class="btn btn-outline-primary" href="#">Sign up</a>
+            </div>
+        
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+              <h1 class="display-4">Pricing</h1>
+                <p class="lead" style="width: 45%; margin: 0 auto;">
+                    Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.
+                </p>
+            </div>
+
+            <div class="slider" style="margin-bottom: 3.5rem; display: flex; justify-content: center;">
+                <input id="RangerValue" type="range" min="0" max="30" value="0" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">0</p>
+            </div> 
+        
+            <div class="container">
+              <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 box-shadow element1">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>10 users included</li>
+                      <li>2 GB of storage</li>
+                      <li>Email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary"
+                    data-toggle="modal" data-target="#exampleModal">Sign up for free</button>
+                  </div>
+                </div>
+                <div class="card mb-4 box-shadow element2">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>20 users included</li>
+                      <li>10 GB of storage</li>
+                      <li>Priority email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary"
+                    data-toggle="modal" data-target="#exampleModal">Get started</button>
+                  </div>
+                </div>
+                <div class="card mb-4 box-shadow element3">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>30 users included</li>
+                      <li>15 GB of storage</li>
+                      <li>Phone and email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary"
+                    data-toggle="modal" data-target="#exampleModal">Contact us</button>
+                  </div>
+                </div>
+              </div>
+        
+              <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="row">
+                  <div class="col-12 col-md">
+                    <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">© 2017-2018</small>
+                  </div>
+                  <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                      <li><a class="text-muted" href="#">Cool stuff</a></li>
+                      <li><a class="text-muted" href="#">Random feature</a></li>
+                      <li><a class="text-muted" href="#">Team feature</a></li>
+                      <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                      <li><a class="text-muted" href="#">Another one</a></li>
+                      <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                      <li><a class="text-muted" href="#">Resource</a></li>
+                      <li><a class="text-muted" href="#">Resource name</a></li>
+                      <li><a class="text-muted" href="#">Another resource</a></li>
+                      <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                      <li><a class="text-muted" href="#">Team</a></li>
+                      <li><a class="text-muted" href="#">Locations</a></li>
+                      <li><a class="text-muted" href="#">Privacy</a></li>
+                      <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+            </div>
+
+
+
+
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign-Up Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://forms.maakeetoo.com/formapi/591" method="post" id="SubmitForm">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="firstname">Enter your Name</label>
+                            <input type="text" class="form-control" id="firstname" name="middlename"
+                            placeholder="Full Name" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="email">Enter your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required name="email"
+                            pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="message">Order Comments</label>
+                                <textarea class="form-control" id="message" rows="4" minlength="10" maxlength="200"
+                                placeholder="Enter your Comments" required name="message"></textarea>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            
+                          </div>
+                        </div>       
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+
+ 
+    <script src="/task.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+

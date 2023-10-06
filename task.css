@@ -1,0 +1,49 @@
+input[type="range"] {
+    -webkit-appearance: none;
+     appearance: none;
+     background: transparent;
+     cursor: pointer;
+     width: 15rem;
+     display: inline-block;
+ }
+
+ input[type="range"]:focus {
+   outline: none;
+ }
+ 
+ input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #053a5f;
+    border-radius: 0.5rem;
+    height: 0.5rem;  
+ }
+ 
+ input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -12px; 
+ 
+    /*custom styles*/
+    background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem;
+ }
+ 
+ input[type="range"]:focus::-webkit-slider-thumb {   
+   border: 1px solid #053a5f;
+   outline: 3px solid #053a5f;
+   outline-offset: 0.125rem; 
+ }
+ 
+ #rangeValue{
+    display: inline;
+    font-size: 20px;
+    margin-left: 1.5rem;
+ }
+
+ .active-element{
+    cursor: pointer;
+    border: 3px solid #428d82;
+    box-shadow: 9px 5px 41px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 9px 5px 41px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 9px 5px 41px -3px rgba(0,0,0,0.58);
+ }
